@@ -30,11 +30,11 @@ self.__precacheManifest = [
     "url": "webpack-runtime-0c8d365e2066f8a69b90.js"
   },
   {
-    "url": "app-5a4d5de55dd8f4fa3cbe.js"
+    "url": "app-889432b0cc18c8e5d586.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "da99cf5955cdae350ebdb5fcc205ff36"
+    "revision": "5a2c6a0c98c10be745948415a9db00bd"
   },
   {
     "url": "styles.7c424a46253b29a2db6b.css"
@@ -80,9 +80,6 @@ self.__precacheManifest = [
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.precaching.cleanupOutdatedCaches();
-
-workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/.*(?:googleapis|gstatic)\.com.*/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
