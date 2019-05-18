@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+sitemap: https://pwawithangular.com/sitemap.xml
