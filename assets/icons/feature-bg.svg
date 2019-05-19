@@ -16,16 +16,6 @@
                         fill: #53f;
                       }
                     </style>
-                    <linearGradient
-                      id="linear-gradient"
-                      y1="140.5"
-                      x2="276.1"
-                      y2="140.5"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset="0" stop-color="#53f" />
-                      <stop offset="1" stop-color="#05d5ff" />
-                    </linearGradient>
                   </defs>
                   <title>Recurso 4</title>
                   <g id="layer_22" data-name="layer 2">
