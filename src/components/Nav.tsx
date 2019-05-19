@@ -82,7 +82,7 @@ export class Nav extends React.Component<{ id: string }, { isSticky: boolean; po
                     this.setState({ popUpOpen: !this.state.popUpOpen });
                   }}
                 >
-                  <button className="st-root-link navbar-toggler" type="button">
+                  <button aria-label="menu" className="st-root-link navbar-toggler" type="button">
                     <span className="icon-bar" /> <span className="icon-bar" /> <span className="icon-bar" />
                   </button>
                   <div className="st-popup">

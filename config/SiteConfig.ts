@@ -9,7 +9,7 @@ export default {
   defaultBg: '/assets/angular-pwa-book-coffee.jpg', // default post background header
   favicon: '/assets/angular-pwa-logo.png', // Your image for favicons. You can find it in the /src folder
   siteDescription:
-    'Progressive Web App With Angular, a comprehensive book to teach angular developer to learn modern API and PWA, Published By Apress', // Your site description
+    'Progressive Web App With Angular, a comprehensive book to teach angular developer to learn modern API and PWA, Published By Apress.Harness the power of Angular to build fast, high performance progressive web apps that work offline. Learn exactly how to create an Angular Progressive Web App (PWA) from scratch, how you can use different tools to audit and improve it, and leverage Angular CLI or Workbox to turn your app into a PWA.', // Your site description
   author: 'Majid Hajian', // Author for schemaORGJSONLD
   siteLogo: '/assets/angular-pwa-logo.png', // Image for schemaORGJSONLD
 

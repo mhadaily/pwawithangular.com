@@ -33,7 +33,9 @@ const Video = (props: { id: string }) => {
                     We would love to meet you in person but until then, let's have a few recoded words with you on youtube.
                   </p>
                   <p className="handwritten highlight font-md mt-5">We have something to say</p>
-                  <button className="btn btn-rounded btn-lg btn-3">Play Now</button>
+                  <button aria-label="Play Now" className="btn btn-rounded btn-lg btn-3">
+                    Play Now
+                  </button>
                   <hr className="w-50 mx-auto my-4" />
                   <p className="small color-2">We would love to hear from you too, feel free to contact us anytime.</p>
                 </div>
@@ -42,6 +44,7 @@ const Video = (props: { id: string }) => {
                 href="https://www.youtube.com/watch?v=MXghcI8hcWU"
                 className="modal-popup mfp-iframe play-video btn btn-3 btn-circle color-1 shadow"
                 target="_blank"
+                rel="noopener"
               >
                 <FontAwesomeIcon icon={faPlay} size="3x" />
               </a>

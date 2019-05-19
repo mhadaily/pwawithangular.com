@@ -7,7 +7,7 @@ const Question = ({ isActive, answer, title, onClickFn, index }: IQuestion) => {
   return (
     <div className="card mb-3">
       <div className="card-header">
-        <button className={`card-title btn ${isActive ? '' : 'collapsed'}`} onClick={() => onClickFn(index)}>
+        <button aria-label={title} className={`card-title btn ${isActive ? '' : 'collapsed'}`} onClick={() => onClickFn(index)}>
           <span style={{ marginRight: '1rem' }}>
             <FontAwesomeIcon icon={isActive ? faAngleDown : faAngleRight} />
           </span>

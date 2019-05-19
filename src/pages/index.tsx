@@ -1,7 +1,6 @@
 import React from 'react';
-import { CallToAction, Faq, Testimonials, Promotion, Video, Author, Banner, Benefits, Layout, Header, Features } from '../components';
+import { CallToAction, Faq, Testimonials, Promotion, Video, Author, Banner, Benefits, Layout, Header, Features, SEO } from '../components';
 import PageProps from '../models/PageProps';
-import Helmet from 'react-helmet';
 import config from '../../config/SiteConfig';
 import { IFeature } from '../models/Feature';
 import { ISlide } from '../models/Slide';
@@ -122,7 +121,7 @@ export default class IndexPage extends React.Component<PageProps> {
   public render() {
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} | Homepage`} />
+        <SEO title={`${config.siteTitle}`} />
         <main>
           <Header />
           <Features id="Features" data={featuresData} subtitle="Reasons to read" title="Leverage Angular to build your next PWA" />

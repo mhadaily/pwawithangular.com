@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../config/SiteConfig';
 
-export const SEO = () => {
-  const title = config.siteTitle;
+export const SEO = (props: { title: string }) => {
+  const title = props.title || config.siteTitle;
   const description = config.siteDescription;
   const image = config.siteBanner;
   const blogURL = config.siteUrl + config.pathPrefix;
@@ -19,9 +19,8 @@ export const SEO = () => {
   ];
 
   return (
-    <Helmet>
+    <Helmet title={title}>
       <html lang={config.siteLanguage} />
-      <title>{config.siteTitle}</title>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>

@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import theme from '../../config/Theme';
-import { Nav, Footer } from '../components';
+import { Nav, Footer, SEO } from '../components';
 
 import './layout.scss';
 
