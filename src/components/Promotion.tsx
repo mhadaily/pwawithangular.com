@@ -9,7 +9,7 @@ const Promotion = (props: { id: string }) => {
         query {
           bookBg: file(relativePath: { eq: "assets/angular-pwa-book-beside-laptop.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1200) {
+              fluid(maxWidth: 1200, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

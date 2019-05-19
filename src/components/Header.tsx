@@ -11,7 +11,7 @@ const Header = () => {
         query {
           bookCover: file(relativePath: { eq: "assets/pwa-angular-book-front-cover.png" }) {
             childImageSharp {
-              fluid(maxWidth: 900) {
+              fluid(maxWidth: 500, quality: 40) {
                 ...GatsbyImageSharpFluid
               }
             }

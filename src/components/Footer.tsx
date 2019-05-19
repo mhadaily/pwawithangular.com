@@ -13,19 +13,19 @@ const Footer = (props: { id: string; builtTime: string }) => {
         <NewsletterForm />
         <hr className="mt-5" />
         <nav className="nav social-icons justify-content-center mt-4">
-          <a href="#" className="mr-3 font-regular color-2">
+          <a aria-label="Facebook" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="#" className="mr-3 font-regular color-2">
+          <a aria-label="Twitter" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="#" className="mr-3 font-regular color-2">
+          <a aria-label="Instagram" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="#" className="mr-3 font-regular color-2">
+          <a aria-label="Rss" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faRss} />
           </a>
-          <a href="#" className="font-regular color-2">
+          <a aria-label="Linkedin" href="#" className="font-regular color-2">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </nav>

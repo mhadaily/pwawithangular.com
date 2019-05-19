@@ -11,7 +11,7 @@ const Video = (props: { id: string }) => {
         query {
           videoBg: file(relativePath: { eq: "assets/angular-pwa-book-coffee.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 900, quality: 70) {
                 ...GatsbyImageSharpFluid
               }
             }

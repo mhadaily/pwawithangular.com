@@ -10,7 +10,7 @@ const NewsletterForm = (props: any) => {
           <div className="row">
             <div className="col-md-10 mx-md-auto">
               <form action="#" className="form">
-                <div className="input-group-register py-4">
+                <label htmlFor="subscribe" className="input-group-register py-4">
                   <input
                     id="subscribe"
                     type="email"
@@ -19,11 +19,10 @@ const NewsletterForm = (props: any) => {
                     placeholder="Enter your email"
                     required
                   />
-                  <label htmlFor="subscribe" />
                   <button aria-label="Register" className="btn btn-rounded btn-3 btn-lg" type="submit">
                     Register
                   </button>
-                </div>
+                </label>
               </form>
               <div className="response-message" style={{ display: 'none' }}>
                 <i className="fas fa-envelope font-lg" />
