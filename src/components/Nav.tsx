@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import config from '../../config/SiteConfig';
 
 export class Nav extends React.Component<{ id: string }, { isSticky: boolean; popUpOpen: boolean }> {
   public state = { isSticky: false, popUpOpen: false };
   public menuItems: { to: string; label: string }[] = [
     { to: 'Features', label: 'Features' },
-    { to: 'Author', label: `Who're behind the book?` },
-    { to: 'Video', label: 'Something to say!' },
-    { to: 'Testimonials', label: 'What Experts Say?' },
-    { to: 'Footer', label: 'Contact Us' },
+    { to: 'Author', label: `Authors` },
+    { to: 'Video', label: 'Video' },
+    { to: 'Testimonials', label: 'Testimonial' },
+    { to: 'Footer', label: 'Contact' },
   ];
 
   private stickyPoint = 90;
@@ -96,24 +96,26 @@ export class Nav extends React.Component<{ id: string }, { isSticky: boolean; po
                         Close
                       </a>
                       <div className="st-dropdown-content-group">
-                        <h4 className="text-uppercase regular">Pages</h4>
-                        <a className="regular text-primary" href="about.html">
-                          <i className="far fa-building icon" /> About{' '}
-                        </a>
-                        <a className="regular text-success" href="contact.html">
-                          <i className="far fa-envelope icon" /> Contact{' '}
-                        </a>
-                        <a className="regular text-warning" href="pricing.html">
-                          <i className="fas fa-hand-holding-usd icon" /> Pricing{' '}
-                        </a>
-                        <a className="regular text-info" href="faqs.html">
-                          <i className="far fa-question-circle icon" /> FAQs
-                        </a>
+                        {/* <h4 className="text-uppercase regular">Pages</h4> */}
+                        {this.menuItems.map((menu, i) => {
+                          return (
+                            <Link
+                              activeClass="active"
+                              to={menu.to}
+                              spy={true}
+                              smooth={true}
+                              duration={500}
+                              offset={-90}
+                              className="st-root-link nav-link"
+                              key={i}
+                            >
+                              {menu.label}
+                            </Link>
+                          );
+                        })}
                       </div>
                       <div className="st-dropdown-content-group bg-6 b-t">
-                        <a href="login.html">
-                          Sign in <i className="fas fa-arrow-right" />
-                        </a>
+                        <a href={config.Amazon_Link}>Order The Book</a>
                       </div>
                     </div>
                   </div>

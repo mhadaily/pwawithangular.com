@@ -95,15 +95,15 @@ module.exports = {
             // since these files have unique URLs and their contents will never change
             dontCacheBustURLsMatching: /(\.js$|\.css$|static\/)/,
             runtimeCaching: [
-              {
-                // Use CacheFirst since these don't need to be revalidated (same RegExp
-                // and same reason as above)
-                urlPattern: /(\.js$|\.css$|static\/)/,
-                handler: `CacheFirst`,
-              },
+              // {
+              //   // Use CacheFirst since these don't need to be revalidated (same RegExp
+              //   // and same reason as above)
+              //   urlPattern: /(\.js$|\.css$|static\/)/,
+              //   handler: `CacheFirst`,
+              // },
               {
                 // Add runtime caching of various other page resources
-                urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+                urlPattern: /^https?:.*.pwawithangular.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
                 handler: `StaleWhileRevalidate`,
               },
               {

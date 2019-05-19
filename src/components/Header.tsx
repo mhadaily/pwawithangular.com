@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Link } from 'react-scroll';
 import Img from 'gatsby-image';
+import config from '../../config/SiteConfig';
 
 const Header = () => {
   return (
@@ -41,9 +42,9 @@ const Header = () => {
                 </p>
                 <div className="nav mt-5 align-items-center">
                   <a
-                    href="https://amzn.to/2Vv5OGI"
+                    href={config.Amazon_Link}
                     target="_blank"
-                    className="btn btn-rounded btn-lg btn-4 shadow mr-3 px-4 text-capitalize"
+                    className="btn btn-rounded btn-lg btn-4 my-2 shadow mr-3 px-4 text-capitalize"
                   >
                     Pre-order now!
                   </a>
@@ -54,7 +55,7 @@ const Header = () => {
                     smooth={true}
                     offset={-90}
                     duration={500}
-                    className="btn btn-rounded btn-lg btn-2 shadow mr-3 px-4 text-capitalize"
+                    className="btn btn-rounded btn-lg btn-2 my-2 shadow mr-3 px-4 text-capitalize"
                   >
                     Stay up-to-date
                   </Link>

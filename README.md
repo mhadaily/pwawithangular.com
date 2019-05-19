@@ -8,11 +8,11 @@ Using browser APIs – including the Credential Management, Payment Request, Geo
 
 You'll learn how to boost your app speed, how to increase user engagement using push notifications, and how to implement offline storage and different caching APIs in Angular. You'll even see how to convert an existing Angular app into a PWA. Whether you’re new to building PWAs, or want to learn how to use Angular to improve your app development, Progressive Web Apps with Angular provides the know-how to build and deploy an Angular PWA.
 
-<img src="https://raw.githubusercontent.com/mhadaily/pwawithangular.com/master/angular-pwa-book-coffee.jpg">
+<img src="https://raw.githubusercontent.com/mhadaily/pwawithangular.com/master/static/assets/angular-pwa-book-coffee.jpg">
 
-## Contibution
+## Contribution
 
-1- development: `npm start`
-2- production build with all optimization: `npm run build`
+- development: `npm start`
+- production build with all optimization: `npm run build`
 *** please go to plugin and build them first before you build the whole project, this is temporary until my PRs get merged in offline plugin ***
-3- deployment: `npm run deploy`
+- deployment: `npm run deploy`

@@ -28,4 +28,5 @@ export default {
   //
   Google_Tag_Manager_ID: 'GTM-MVP42QK',
   POST_PER_PAGE: 4,
+  Amazon_Link: 'https://amzn.to/2Vv5OGI',
 };
