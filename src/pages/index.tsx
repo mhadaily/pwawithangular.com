@@ -5,7 +5,7 @@ import config from '../../config/SiteConfig';
 import { IFeature } from '../models/Feature';
 import { ISlide } from '../models/Slide';
 import { IFaq } from '../models/Faq';
-import BookReview from '../components/Book-Previews';
+import TableOfContent from '../components/TableOfContent';
 
 const featuresData: IFeature[] = [
   {
@@ -126,7 +126,7 @@ export default class IndexPage extends React.Component<PageProps> {
         <main>
           <Header />
           <Features id="Features" data={featuresData} subtitle="Reasons to read" title="Leverage Angular to build your next PWA" />
-          <BookReview />
+          <TableOfContent />
           <Benefits
             id="Benefits"
             list={benefits}
