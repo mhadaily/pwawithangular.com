@@ -56,7 +56,7 @@ const Benefits = ({
                         <div className="media flex-column flex-lg-row align-items-center align-items-md-start">
                           <i className="mx-auto ml-md-0 mr-md-3 accent pe pe-7s-timer pe-3x" />
                           <div className="media-body mt-3 mt-md-0">
-                            <h5 className="bold mt-0 mb-1">{benefit.title}</h5>
+                            <div className="bold mt-0 mb-1 pb-4">{benefit.title}</div>
                             <p className="m-0 d-md-none d-lg-block">{benefit.description}</p>
                           </div>
                         </div>

@@ -30,8 +30,15 @@ const Footer = (props: { id: string; builtTime: string }) => {
           </a>
         </nav>
         <p className="small copyright color-2">
-          &copy; {year} by <a href="https://www.majidhajian.com">Majid Hajian</a>. All rights reserved. <br />
-          <a href="https://www.pwawithangular.com">pwawithangular.com</a> <br />
+          &copy; {year} by{' '}
+          <a className="color-5" rel="noopener" target="_blank" href="https://www.majidhajian.com">
+            Majid Hajian
+          </a>
+          . All rights reserved. <br />
+          <a className="color-5" rel="noopener" target="_blank" href="https://www.pwawithangular.com">
+            pwawithangular.com
+          </a>{' '}
+          <br />
           <span>Last build: {props.builtTime}</span>
         </p>
       </div>

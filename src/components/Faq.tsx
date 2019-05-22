@@ -35,7 +35,7 @@ const Faq = (props: { id: string; data: IFaq[] }) => {
               Do you have <span className="bold">questions</span>
             </h2>
             <p className="lead">Not sure how this book can help you? Wonder why you need to buy PWA with Angular book?</p>
-            <p className="text-muted">Here are the answers to some of the most common questions we hear from our appreciated customers</p>
+            <p >Here are the answers to some of the most common questions we hear from our appreciated customers</p>
           </div>
           <div className="col-md-8">
             <div className="accordion accordion-clean">

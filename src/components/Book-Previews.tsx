@@ -55,7 +55,7 @@ const BookReview = () => {
         <section className="section features-carousel b-b">
           <div className="container">
             <div className="section-heading mb-6 text-center">
-              <h5 className="bold small text-uppercase">Overview of</h5>
+              <div className="bold small text-uppercase pb-4">Overview of</div>
               <h2>Table of Contents</h2>
             </div>
             <div className="row">

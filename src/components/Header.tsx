@@ -45,7 +45,7 @@ const Header = () => {
                     rel="noopener"
                     href={config.Amazon_Link}
                     target="_blank"
-                    className="btn btn-rounded btn-lg btn-4 my-2 shadow mr-3 px-4 text-capitalize"
+                    className="btn btn-rounded btn-lg btn-5 my-2 shadow mr-3 px-4 text-capitalize"
                   >
                     Pre-order now!
                   </a>

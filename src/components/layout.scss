@@ -21759,6 +21759,9 @@ main {
   cursor: pointer;
   position: relative;
 }
+.st-nav .st-nav-section.st-nav-mobile .st-root-link:hover {
+  color: #fff;
+}
 .st-nav .st-nav-section.st-nav-mobile .st-root-link .icon-bar {
   background-color: #6800ee;
 }
@@ -21825,7 +21828,7 @@ main {
 .st-nav .st-popup-close-button:before {
   content: '';
   position: absolute;
-  background: #6800ee;
+  background: #000;
   border-radius: 1px;
   left: 14px;
   right: 14px;
