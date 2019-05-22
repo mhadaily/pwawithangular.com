@@ -7,10 +7,11 @@ export class Nav extends React.Component<{ id: string }, { isSticky: boolean; po
   public state = { isSticky: false, popUpOpen: false };
   public menuItems: { to: string; label: string }[] = [
     { to: 'Features', label: 'Features' },
+    { to: 'TableOfContent', label: 'Table Of Content' },
     { to: 'Author', label: `Authors` },
-    { to: 'Video', label: 'Video' },
     { to: 'Testimonials', label: 'Testimonial' },
-    { to: 'Footer', label: 'Contact' },
+    { to: 'Blog', label: 'Blog' },
+    { to: 'Footer', label: 'Stay Up-to-date' },
   ];
 
   private stickyPoint = 90;

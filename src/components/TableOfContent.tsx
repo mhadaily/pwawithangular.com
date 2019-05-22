@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const TableOfContent = () => {
+const TableOfContent = (props: { id: string }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -35,7 +35,7 @@ const TableOfContent = () => {
         }
       `}
       render={(data: any) => (
-        <section className="section features-carousel b-b">
+        <section id={props.id} className="section features-carousel b-b">
           <div className="container">
             <div className="section-heading mb-6 text-center">
               <div className="bold small text-uppercase pb-4">Overview of</div>

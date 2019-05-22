@@ -6,6 +6,7 @@ import { IFeature } from '../models/Feature';
 import { ISlide } from '../models/Slide';
 import { IFaq } from '../models/Faq';
 import TableOfContent from '../components/TableOfContent';
+import Blog from '../components/Blog';
 
 const featuresData: IFeature[] = [
   {
@@ -126,7 +127,7 @@ export default class IndexPage extends React.Component<PageProps> {
         <main>
           <Header />
           <Features id="Features" data={featuresData} subtitle="Reasons to read" title="Leverage Angular to build your next PWA" />
-          <TableOfContent />
+          <TableOfContent id="TableOfContent" />
           <Benefits
             id="Benefits"
             list={benefits}
@@ -140,6 +141,7 @@ export default class IndexPage extends React.Component<PageProps> {
           <Testimonials data={slidesData} id="Testimonials" />
           <Faq data={questions} id="Faq" />
           <CallToAction id="CallToAction" />
+          <Blog id="Blog" />
         </main>
       </Layout>
     );

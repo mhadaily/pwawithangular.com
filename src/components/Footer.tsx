@@ -8,10 +8,9 @@ import NewsletterForm from './NewsletterForm';
 const Footer = (props: { id: string; builtTime: string }) => {
   const year = props.builtTime.split('.')[2];
   return (
-    <footer id={props.id} className="site-footer section text-center block bg-1">
-      <div className="container py-4">
+    <footer id={props.id} className="site-footer section text-center">
+      <div className="container">
         <NewsletterForm />
-        <hr className="mt-5" />
         <nav className="nav social-icons justify-content-center mt-4">
           <a aria-label="Facebook" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faFacebookF} />
