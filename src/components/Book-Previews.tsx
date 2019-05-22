@@ -64,7 +64,6 @@ const BookReview = () => {
                   <div className="col-md-4 py-4 rounded shadow-hover text-center" key={i}>
                     <div className="card border-0 shadow">
                       <div className="card-body">
-                          {console.log(data[key])}
                         <Img fluid={data[key].childImageSharp.fluid} className="img-responsive" alt="Book table of contents" />
                       </div>
                     </div>
