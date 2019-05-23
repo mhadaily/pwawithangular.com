@@ -5,12 +5,12 @@ const Post = () => {
   return (
     <div className="col-md-6 col-lg-4">
       <div className="card card-blog shadow-box shadow-hover border-0">
-        <a href="blog-post.html">
+        <a href="#">
           <img className="card-img-top img-responsive" src="https://picsum.photos/350/200/?random&gravity=north" alt="" />
         </a>
         <div className="card-body">
           <p className="card-title regular">
-            <a href="blog-post.html">Discover the Beauty of DashCore</a>
+            <a href="#">Discover the Beauty of DashCore</a>
           </p>
           <p className="card-text color-2">
             Appropriately deliver standardized internal or "organic" sources whereas worldwide mindshare. Holisticly communicate premier...
