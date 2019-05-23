@@ -14,7 +14,7 @@
 importScripts("workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v4.3.1", debug: false});
 
-workbox.core.setCacheNameDetails({prefix: "angular-pwa-blog"});
+workbox.core.setCacheNameDetails({prefix: "angular-pwa-book"});
 
 workbox.core.skipWaiting();
 
@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-a6f5d57f3870a1203c56.js"
+    "url": "webpack-runtime-c7bd477013bf01395bb3.js"
   },
   {
-    "url": "app-af949ef63476ffe8f911.js"
+    "url": "app-9f5ba10facfd768e971b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9637d26a834abd82553a3d890a923f6a"
+    "revision": "7722a0e3fddf183fa5f0a3ffadfbc498"
   },
   {
-    "url": "styles.58be12f541bdcc10ef66.css"
+    "url": "styles.9d38adb647902ffa44c3.css"
   },
   {
     "url": "google-fonts/s/caveat/v5/Wnz6HAc5bAfYB2Q7ZjYY.woff2",
@@ -56,23 +56,26 @@ self.__precacheManifest = [
     "revision": "1a280523d375e9358d5229df34fc8e94"
   },
   {
-    "url": "1-bcc08505f36b6513edde.js"
+    "url": "component---src-pages-404-tsx-1bb772e8e7d66d8f00c8.js"
   },
   {
-    "url": "component---src-pages-404-tsx-7df511e5ca2bd146d70a.js"
+    "url": "2-1a73d784e80708204a1b.js"
   },
   {
-    "url": "styles-4f8afe187849ba081d66.js"
+    "url": "1-35c47fc8aa3b480833d8.js"
+  },
+  {
+    "url": "styles-ed14a17332d87a06ec4b.js"
   },
   {
     "url": "static/d/285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8.json"
   },
   {
-    "url": "component---plugins-gatsby-plugin-offline-app-shell-js-62d0f50da7b0e7fc2c26.js"
+    "url": "component---plugins-gatsby-plugin-offline-app-shell-js-45995a21468695ea245e.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "d0307839e040e1d9e513b97c3bcd0b2f"
+    "revision": "6fd6b9c97cb522c62960935576e75543"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
