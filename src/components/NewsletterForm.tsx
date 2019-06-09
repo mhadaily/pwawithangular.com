@@ -55,6 +55,9 @@ const NewsletterForm = (props: any) => {
                           onChange={handleChangeFullName}
                           required
                         />
+                        <span aria-label="fullanme" className="btn">
+                          First and Last name
+                        </span>
                       </label>
                       <label htmlFor="email" className="input-group-register">
                         <input

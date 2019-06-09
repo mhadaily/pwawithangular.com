@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRss } from '@fortawesome/free-solid-svg-icons';
+// import { faRss } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import NewsletterForm from './NewsletterForm';
@@ -12,19 +12,37 @@ const Footer = (props: { id: string; builtTime: string }) => {
       <div className="container">
         <NewsletterForm />
         <nav className="nav social-icons justify-content-center mt-4">
-          <a aria-label="Facebook" href="#" className="mr-3 font-regular color-2">
+          <a
+            aria-label="Facebook"
+            rel="noopener"
+            target="_blank"
+            href="https://www.facebook.com/webmax"
+            className="mr-3 font-regular color-2"
+          >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a aria-label="Twitter" href="#" className="mr-3 font-regular color-2">
+          <a aria-label="Twitter" rel="noopener" target="_blank" href="https://twitter.com/mhadaily" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a aria-label="Instagram" href="#" className="mr-3 font-regular color-2">
+          <a
+            aria-label="Instagram"
+            rel="noopener"
+            target="_blank"
+            href="https://www.instagram.com/webmaxru/?hl=en"
+            className="mr-3 font-regular color-2"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a aria-label="Rss" href="#" className="mr-3 font-regular color-2">
+          {/* <a aria-label="Rss" rel="noopener" target="_blank" href="#" className="mr-3 font-regular color-2">
             <FontAwesomeIcon icon={faRss} />
-          </a>
-          <a aria-label="Linkedin" href="#" className="font-regular color-2">
+          </a> */}
+          <a
+            aria-label="Linkedin"
+            rel="noopener"
+            target="_blank"
+            href="https://www.linkedin.com/in/mhadaily/"
+            className="font-regular color-2"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </nav>
