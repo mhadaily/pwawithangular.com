@@ -24,12 +24,12 @@ const Promotion = (props: { id: string }) => {
                 <p className="lead color-2">
                   Harness the power of Angular to build fast, high performance progressive web apps that work offline. Learn exactly how to
                   create an Angular Progressive Web App (PWA) from scratch, how you can use different tools to audit and improve it, and
-                  leverage Angular CLI or Workbox to turn your app into a PWA.
+                  leverage Angular Service Worker or Workbox to turn your app into a PWA.
                 </p>
                 <p>
                   Using browser APIs – including the Credential Management, Payment Request, Geolocation, Web Bluetooth, WebUSB and Generic
                   Sensors APIs – you can unleash the potential of PWAs and build applications that enhance user experience. Angular’s
-                  game-changing built-in features, including the Angular service worker module, can be leveraged to construct responsive and
+                  game-changing built-in features, including the Angular Service Worker module, can be leveraged to construct responsive and
                   reliable PWAs that can look and feel just like native mobile apps.
                 </p>
                 <p>

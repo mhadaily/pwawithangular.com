@@ -1,8 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Link } from 'react-scroll';
 import Img from 'gatsby-image';
-import config from '../../config/SiteConfig';
+import PurchaseButtons from './PurchaseButtons';
 
 const Header = () => {
   return (
@@ -36,30 +35,14 @@ const Header = () => {
                   <span className="d-block light font-md">With Angular</span>
                 </h1>
                 <p className="lead">
-                  1st comprehensive Angular PWA Book
+                  1st comprehensive (380+ pages) Angular PWA Book
                   <br />
                   Create Responsive, Fast and Reliable Angular PWAs
+                  <br />
+                  <small>BTW, this website is a PWA! You can use this offline now.</small>
                 </p>
                 <div className="nav mt-5 align-items-center">
-                  <a
-                    rel="noopener"
-                    href={config.Amazon_Link}
-                    target="_blank"
-                    className="btn btn-rounded btn-lg btn-5 my-2 shadow mr-3 px-4 text-capitalize"
-                  >
-                    Pre-order now!
-                  </a>
-                  <Link
-                    activeClass="active"
-                    to="Footer"
-                    spy={true}
-                    smooth={true}
-                    offset={-90}
-                    duration={500}
-                    className="btn btn-rounded btn-lg btn-2 my-2 shadow mr-3 px-4 text-capitalize"
-                  >
-                    Stay up-to-date
-                  </Link>
+                  <PurchaseButtons />
                 </div>
               </div>
               <div className="col-md-6 col-lg-5 ml-lg-auto">

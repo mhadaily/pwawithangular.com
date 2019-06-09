@@ -21,10 +21,12 @@ const Banner = (props: { id: string }) => {
             <div className="row align-items-center gradient gradient-53 color-1">
               <div className="col-md-3 mx-auto py-4 py-md-0">
                 <p className="text-uppercase mb-0 badge badge-1">Source code ...</p>
-                <p className="font-md bold mt-1 color-1">Lots of sample codes which are included</p>
+                <p className="font-md bold mt-1 color-1">Lots of code samples which are included</p>
                 <hr className="my-4" />
                 <div className="small color-1">
-                  <span className="bold d-block">Download or Clone</span> from Github
+                  <a href="https://github.com/mhadaily/awesome-apress-pwa" target="_blank" rel="noopener" className="color-1 bold d-block">
+                    Download or Clone from Github
+                  </a>
                 </div>
               </div>
               <div

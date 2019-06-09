@@ -29,4 +29,6 @@ export default {
   Google_Tag_Manager_ID: 'GTM-MVP42QK',
   POST_PER_PAGE: 4,
   Amazon_Link: 'https://amzn.to/2Vv5OGI',
+  Apress_Link:
+    'https://www.apress.com/us/book/9781484244470?utm_medium=affiliate&utm_source=commission_junction&utm_campaign=3_nsn6445_product_PID%zp&utm_content=us_05032018#otherversion=9781484244470',
 };

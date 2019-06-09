@@ -46,17 +46,55 @@ const Author = (props: { id: string }) => {
                   Majid Hajian is a software developer has developed and architected complex web applications since 2007 after he graduated
                   as a software engineer. A software developer at heart, Majid is passionate about web platform especially hardware
                   connectivity and performance and in particular Progressive Web Apps. He loves sharing his knowledge with the community by
-                  writing on his blog majidhajian.com and tweeting @mhadaily, speaking at conferences, visiting developers to help them,
-                  contributing to open source and organizing meetups and events.
+                  writing on his blog{' '}
+                  <a href="https://www.majidhajian.com" target="_blank" rel="noopener" className="color-5">
+                    majidhajian.com
+                  </a>{' '}
+                  and tweeting{' '}
+                  <a href="https://twitter.com/mhadaily" target="_blank" rel="noopener" className="color-5">
+                    @mhadaily
+                  </a>
+                  , speaking at conferences, visiting developers to help them, contributing to open source and organizing meetups and
+                  events.
                 </p>
                 <p className="regular">
-                  Majid is the author of "Progressive web app with Angular" book published by Apress and "Progressive Web Apps" video
-                  tutorial published by PacktPub and Udemy.
+                  Majid is the author of "Progressive web app with Angular" book published by Apress and{' '}
+                  <a
+                    href="https://www.packtpub.com/application-development/progressive-web-application-development-video"
+                    target="_blank"
+                    rel="noopener"
+                    className="color-5"
+                  >
+                    "Progressive Web Application Development"
+                  </a>{' '}
+                  video tutorial published by PacktPub and Udemy.
                 </p>
                 <p className="regular">
-                  He is (co)organizer of a few meetups in Norway dedicated to frontend and mobile in Oslo including Mobile meetup and Vue.js
-                  Oslo and Angular Oslo, Framisa and an Organizer of Mobile Era and ngVikings which are the main Nordic conferences for
-                  mobile and Angular.
+                  He is (co)organizer of a few meetups in Norway dedicated to frontend and mobile in Oslo including{' '}
+                  <a href="https://www.meetup.com/Mobile-Meetup-Oslo/" target="_blank" rel="noopener" className="color-5">
+                    Mobile meetup{' '}
+                  </a>
+                  and{' '}
+                  <a href="https://www.meetup.com/VueJS-Oslo/" target="_blank" rel="noopener" className="color-5">
+                    Vue.js Oslo
+                  </a>{' '}
+                  and{' '}
+                  <a href="https://www.meetup.com/AngularJS-Oslo/" target="_blank" rel="noopener" className="color-5">
+                    Angular Oslo
+                  </a>
+                  ,{' '}
+                  <a href="https://www.meetup.com/framsia/" target="_blank" rel="noopener" className="color-5">
+                    Framisa
+                  </a>{' '}
+                  and an Organizer of{' '}
+                  <a href="https://mobileera.rocks" target="_blank" rel="noopener" className="color-5">
+                    Mobile Era
+                  </a>{' '}
+                  and{' '}
+                  <a href="https://ngVikings.org" target="_blank" rel="noopener" className="color-5">
+                    ngVikings
+                  </a>
+                  , the main Nordic conferences for mobile and Angular.
                 </p>
               </div>
             </div>
@@ -74,9 +112,28 @@ const Author = (props: { id: string }) => {
                   Google Developer Expert in Web Technologies & IoT, and a former Microsoft MVP in Development Technologies.
                 </p>
                 <p className="regular">
-                  Maxim is a founder and active contributor to two conferences: Mobile Era and ngVikings - Nordics’ main conferences for
-                  mobile and Angular developers respectively. Also, he leads Norway’s largest meetups dedicated to web front-end and mobile:
-                  Angular Oslo, Mobile Meetup, Oslo PWA, Framsia.
+                  Maxim is a founder and active contributor to two conferences:{' '}
+                  <a href="https://mobileera.rocks" target="_blank" rel="noopener" className="color-5">
+                    Mobile Era
+                  </a>{' '}
+                  and{' '}
+                  <a href="https://ngVikings.org" target="_blank" rel="noopener" className="color-5">
+                    ngVikings
+                  </a>{' '}
+                  - Nordics’ main conferences for mobile and Angular developers respectively. Also, he leads Norway’s largest meetups
+                  dedicated to web front-end and mobile:{' '}
+                  <a href="https://www.meetup.com/AngularJS-Oslo/" target="_blank" rel="noopener" className="color-5">
+                    Angular Oslo
+                  </a>
+                  ,{' '}
+                  <a href="https://www.meetup.com/Mobile-Meetup-Oslo/" target="_blank" rel="noopener" className="color-5">
+                    Mobile meetup{' '}
+                  </a>
+                  , Oslo PWA,{' '}
+                  <a href="https://www.meetup.com/framsia/" target="_blank" rel="noopener" className="color-5">
+                    Framisa
+                  </a>
+                  .
                 </p>
                 <p className="regular">
                   Maxim is passionate about sharing his web platform experience and knowledge with the community. He travels extensively for

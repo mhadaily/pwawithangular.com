@@ -47,13 +47,6 @@ const Blog = (props: { id: string }) => {
                 return <Post key={i} />;
               })}
             </div>
-            <div className="row gap-y text-center">
-              <div className="col-12">
-                <a href="https://www.angularpwa.dev" className="btn btn-5 btn-rounded mt-5 color-1" target="_blank" rel="noopener">
-                  Read More on www.angularpwa.dev
-                </a>
-              </div>
-            </div>
           </div>
         </section>
       )}

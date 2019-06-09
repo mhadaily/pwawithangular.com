@@ -10,6 +10,7 @@ import Header from './Header';
 import Features from './Features';
 import Benefits from './Benefits';
 import Banner from './Banner';
+import PurchaseButtons from './PurchaseButtons';
 import { Button } from './Button';
 import { Layout } from './Layout';
 import { SEO } from './SEO';
@@ -31,5 +32,6 @@ export {
   Button,
   Layout,
   SEO,
+  PurchaseButtons,
   Wrapper,
 };

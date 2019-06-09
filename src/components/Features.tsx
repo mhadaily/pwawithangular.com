@@ -1,7 +1,29 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { IFeature } from '../models/Feature';
+
+const WorkBoxLogo = () => (
+  <svg viewBox="0 0 174 150" className="svg-inline--fa fa-chrome fa-w-16 fa-3x color-1 icon center-xy">
+    <g stroke="none">
+      <g id="workbox-logo" fill="#FFFFFF" fillRule="nonzero">
+        <polygon
+          id="Path"
+          points="50.1 113 42.2 110.6 41.8 15 23.6 23.7 22.6 105 16.1 103 15.6 27.5 0 35 0 115 71.7 149.5 71.7 0.5 50.9 10.5"
+        />
+        <g id="Group" transform="translate(80.000000, 3.000000)">
+          <path
+            d="M0.7,0.3 L0.7,67.1 L93.2,68.7 L93.2,28.8 L0.7,0.3 Z M21.4,33.3 L78.1,44.2 L78.1,50.6 L21.4,43.6 L21.4,33.3 L21.4,33.3 Z"
+            id="Shape"
+          />
+          <path
+            d="M0.7,76.9 L0.7,143.8 L93.2,115.2 L93.2,75.3 L0.7,76.9 Z M21.4,99.9 L78.1,93.3 L78.1,99.7 L21.4,110.2 L21.4,99.9 L21.4,99.9 Z"
+            id="Shape"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
 
 const FeatureSvgBg = (props: { index: number }) => (
   <svg viewBox="0 0 276.1 281.01" className="shape shape-xxl drop-shadow">
@@ -14,12 +36,12 @@ const FeatureSvgBg = (props: { index: number }) => (
 );
 
 const Feature = (props: IFeature) => {
-  const { title, description, index } = props;
+  const { title, description, index, icon } = props;
   return (
     <div className="col-md-4 py-4 rounded shadow-hover text-center">
       <div className="icon-shape mb-4">
         <FeatureSvgBg index={index} />
-        <FontAwesomeIcon icon={faPen} size="2x" className="color-1 icon center-xy" />
+        {icon ? <FontAwesomeIcon icon={icon} size="3x" className="color-1 icon center-xy" /> : <WorkBoxLogo />}
       </div>
       <div className="bold text-capitalize pb-4">{title}</div>
       <p>{description}</p>

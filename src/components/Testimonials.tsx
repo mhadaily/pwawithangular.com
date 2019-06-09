@@ -94,7 +94,7 @@ const Testimonials = (props: { id: string; data: ISlide[] }) => {
           <div className="shape-wrapper">
             <SvgBgComponent />
           </div>
-          <div className="container bring-to-front">
+          {/* <div className="container bring-to-front">
             <div className="row">
               <div className="col-lg-6 ml-lg-auto">
                 <div className="section-heading text-center text-lg-left">
@@ -110,7 +110,7 @@ const Testimonials = (props: { id: string; data: ISlide[] }) => {
                 <SwiperContainer {...props} selectedIndex={selectedIndex} />
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       )}
     />

@@ -15,7 +15,7 @@ const Question = ({ isActive, answer, title, onClickFn, index }: IQuestion) => {
         </button>
       </div>
       <div className={`collapse ${isActive ? 'show' : ''}`}>
-        <div className="card-body">{answer}</div>
+        <div className="card-body" dangerouslySetInnerHTML={{ __html: answer }} />
       </div>
     </div>
   );
@@ -32,10 +32,12 @@ const Faq = (props: { id: string; data: IFaq[] }) => {
         <div className="row">
           <div className="col-md-4">
             <h2>
-              Do you have <span className="bold">questions</span>
+              Do you have <span className="bold">questions?</span>
             </h2>
-            <p className="lead">Not sure how this book can help you? Wonder why you need to buy PWA with Angular book?</p>
-            <p>Here are the answers to some of the most common questions we hear from our appreciated customers</p>
+            <p className="lead">
+              Not sure how this book can help you? Wonder why you need to buy PWA with Angular book? Or you need more information
+            </p>
+            <p>Here are the answers to some of the most common questions we hear from the appreciated readers</p>
           </div>
           <div className="col-md-8">
             <div className="accordion accordion-clean">
