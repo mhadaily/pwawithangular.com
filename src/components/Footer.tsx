@@ -19,10 +19,10 @@ const Footer = (props: { id: string; builtTime: string }) => {
             href="https://www.facebook.com/webmax"
             className="mr-3 font-regular color-2"
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon size="2x" icon={faFacebookF} />
           </a>
           <a aria-label="Twitter" rel="noopener" target="_blank" href="https://twitter.com/mhadaily" className="mr-3 font-regular color-2">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon size="2x" icon={faTwitter} />
           </a>
           <a
             aria-label="Instagram"
@@ -31,10 +31,10 @@ const Footer = (props: { id: string; builtTime: string }) => {
             href="https://www.instagram.com/webmaxru/?hl=en"
             className="mr-3 font-regular color-2"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon size="2x" icon={faInstagram} />
           </a>
           {/* <a aria-label="Rss" rel="noopener" target="_blank" href="#" className="mr-3 font-regular color-2">
-            <FontAwesomeIcon icon={faRss} />
+            <FontAwesomeIcon size="2x" icon={faRss} />
           </a> */}
           <a
             aria-label="Linkedin"
@@ -43,7 +43,7 @@ const Footer = (props: { id: string; builtTime: string }) => {
             href="https://www.linkedin.com/in/mhadaily/"
             className="font-regular color-2"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} />
+            <FontAwesomeIcon size="2x" icon={faLinkedinIn} />
           </a>
         </nav>
         <p className="small copyright color-2">
