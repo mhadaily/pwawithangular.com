@@ -14,7 +14,7 @@
 importScripts("workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "workbox-v4.3.1", debug: false});
 
-workbox.core.setCacheNameDetails({prefix: "angular-pwa-book"});
+workbox.core.setCacheNameDetails({prefix: "pwawithangular-book"});
 
 workbox.core.skipWaiting();
 
@@ -27,14 +27,14 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-26125bff22240855fcc8.js"
+    "url": "webpack-runtime-ee5f03bd163d3fc88570.js"
   },
   {
-    "url": "app-08c7eaaf4b7d2c55eb2f.js"
+    "url": "app-06f391e8d521422566a1.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1249088929bb1a2b13f5de465725f73a"
+    "revision": "d978062a0409f26427f750d551607940"
   },
   {
     "url": "styles.2d9ecfcb5e8573050c51.css"
@@ -59,7 +59,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-404-tsx-cfdd6c25f822468de8e4.js"
   },
   {
-    "url": "2-676719d055eff3621e41.js"
+    "url": "2-a8a6e2d53fd4f9896e17.js"
   },
   {
     "url": "1-35b4f58f468973d0ecd5.js"
