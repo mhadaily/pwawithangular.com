@@ -53,7 +53,7 @@ const Features = (props: { id: string; data: IFeature[]; subtitle: string; title
           <h2>{title}</h2>
         </div>
         <div className="row gap-y text-center text-md-left">
-          <svg viewBox="0 0 276.1 281.01" className="shape shape-xxl drop-shadow">
+          <svg height="0" viewBox="0 0 276.1 281.01" className="shape shape-xxl drop-shadow">
             <defs>
               <linearGradient id="linear-gradient" y1="140.5" x2="276.1" y2="140.5" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stopColor="#9c27b0" />
