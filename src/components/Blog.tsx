@@ -19,7 +19,7 @@ const Post = (props: { blog: IBlog }) => {
         </a>
         <div className="card-body">
           <p className="card-title regular">
-            <a href={link} className="color-3" target="_blank" rel="nofollow noopener">
+            <a href={link} className="color-5" target="_blank" rel="nofollow noopener">
               {title}
             </a>
           </p>

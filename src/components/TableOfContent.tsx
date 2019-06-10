@@ -47,7 +47,13 @@ const TableOfContent = (props: { id: string }) => {
                   <div className="col-md-4 py-4 rounded shadow-hover text-center" key={i}>
                     <div className="card border-0 shadow">
                       <div className="card-body">
-                        <Img fluid={data[key].childImageSharp.fluid} className="img-responsive" alt="Book table of contents" />
+                        <a href={data[key].childImageSharp.fluid.src} target="_blank" rel="noopener">
+                          <Img
+                            fluid={data[key].childImageSharp.fluid}
+                            className="img-responsive"
+                            alt="PWA with Angular Book, table of contents"
+                          />
+                        </a>
                       </div>
                     </div>
                   </div>
