@@ -15,11 +15,15 @@ import { Button } from './Button';
 import { Layout } from './Layout';
 import { SEO } from './SEO';
 import { Wrapper } from './Wrapper';
+import Blog from './Blog';
+import TableOfContent from './TableOfContent';
 
 export {
   Author,
   Footer,
   Nav,
+  TableOfContent,
+  Blog,
   CallToAction,
   Faq,
   Testimonials,

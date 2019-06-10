@@ -1,12 +1,24 @@
 import React from 'react';
-import { CallToAction, Faq, Testimonials, Promotion, Video, Author, Banner, Benefits, Layout, Header, Features, SEO } from '../components';
+import {
+  CallToAction,
+  Faq,
+  Testimonials,
+  Blog,
+  TableOfContent,
+  Video,
+  Author,
+  Banner,
+  Benefits,
+  Layout,
+  Header,
+  Features,
+  SEO,
+} from '../components';
 import PageProps from '../models/PageProps';
 import config from '../../config/SiteConfig';
 import { IFeature } from '../models/Feature';
 import { ISlide } from '../models/Slide';
 import { IFaq } from '../models/Faq';
-import TableOfContent from '../components/TableOfContent';
-// import Blog from '../components/Blog';
 import { faAngular } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -151,7 +163,7 @@ export default class IndexPage extends React.Component<PageProps> {
           <Testimonials data={slidesData} id="Testimonials" />
           <Faq data={questions} id="Faq" />
           <CallToAction id="CallToAction" />
-          {/* <Blog id="Blog" /> */}
+          <Blog id="Blog" />
         </main>
       </Layout>
     );

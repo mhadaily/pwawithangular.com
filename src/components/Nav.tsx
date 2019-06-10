@@ -9,7 +9,7 @@ export class Nav extends React.Component<{ id: string }, { isSticky: boolean; po
     { to: 'Features', label: 'Features' },
     { to: 'TableOfContent', label: 'Table Of Content' },
     { to: 'Author', label: `Authors` },
-    { to: 'Testimonials', label: 'Testimonial' },
+    // { to: 'Testimonials', label: 'Testimonial' },
     { to: 'Blog', label: 'Blog' },
     { to: 'Footer', label: 'Stay Up-to-date' },
   ];

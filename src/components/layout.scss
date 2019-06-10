@@ -13933,6 +13933,7 @@ textarea.form-control.form-control-rounded {
   transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  height: 100%;
 }
 .shadow-hover:hover {
   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15) !important;

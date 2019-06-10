@@ -117,5 +117,13 @@ module.exports = {
           },
         }
       : `gatsby-plugin-remove-serviceworker`,
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: require('path').join(__dirname, `data`),
+      },
+    },
   ],
 };
