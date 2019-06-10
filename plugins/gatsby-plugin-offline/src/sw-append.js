@@ -9,7 +9,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `%pathPrefix%/app-shell-fallback/index.html`;
+      const offlineShell = `%pathPrefix%/offline-plugin-app-shell-fallback/index.html`;
       const cacheName = workbox.core.cacheNames.precache;
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {

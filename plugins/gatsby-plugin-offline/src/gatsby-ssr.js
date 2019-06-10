@@ -3,7 +3,7 @@ export const onPreRenderHTML = ({
   pathname,
   replaceHeadComponents,
 }) => {
-  if (pathname !== `/app-shell-fallback/`) return
+  if (pathname !== `/offline-plugin-app-shell-fallback/`) return
 
   const headComponents = getHeadComponents()
 
