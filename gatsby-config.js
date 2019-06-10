@@ -90,7 +90,7 @@ module.exports = {
             // GlobalPattern and GlobalDirecty are injected by Gatsy Plugin it's not neccessary to
             // modify it however, it's configurable if we want.
             importWorkboxFrom: `local`,
-            cacheId: `angular-pwa-book`,
+            cacheId: `pwawithangular-book`,
             // Don't cache-bust JS or CSS files, and anything in the static directory,
             // since these files have unique URLs and their contents will never change
             dontCacheBustURLsMatching: /(\.js$|\.css$|static\/)/,
