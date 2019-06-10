@@ -10,7 +10,7 @@ exports.createPages = ({ actions }) => {
   if (process.env.NODE_ENV === `production`) {
     const { createPage } = actions;
     createPage({
-      path: `/offline-plugin-app-shell-fallback/`,
+      path: `/app-shell-fallback/`,
       component: slash(path.resolve(`${__dirname}/app-shell.js`)),
     });
   }
@@ -46,11 +46,11 @@ exports.onPostBuild = (args, pluginOptions) => {
   const criticalFilePaths = _.uniq(
     _.concat(
       getResourcesFromHTML(`${process.cwd()}/${rootDir}/404.html`),
-      getResourcesFromHTML(`${process.cwd()}/${rootDir}/offline-plugin-app-shell-fallback/index.html`),
+      getResourcesFromHTML(`${process.cwd()}/${rootDir}/app-shell-fallback/index.html`),
     ),
   ).map(omitPrefix);
 
-  const globPatterns = files.concat([`offline-plugin-app-shell-fallback/index.html`, ...criticalFilePaths]);
+  const globPatterns = files.concat([`app-shell-fallback/index.html`, ...criticalFilePaths]);
 
   const manifests = [`manifest.json`, `manifest.webmanifest`];
   manifests.forEach(file => {
